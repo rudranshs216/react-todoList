@@ -1,38 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
   color: white;
+  font-family: 'Outfit', sans-serif;
+  
+}
+.container{
+  width: 350px;
+  
+
+}
+.icon{
+  cursor: pointer;
+  border-radius: 50%;
+    
+}
+.icon:hover{
+  background-color: rgba(255,255,0,0.8);
+  color: black;
+}
+h1{
+  font-weight: 500;
+  text-align: center;
+  margin: 20px auto;
+}
+.task{
+  background-color: rgba(255,255,255,0.2);
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+.task:hover{
+  cursor: pointer;
+  background-color: rgba(255,255,0,0.5);
+}
+.task p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pIcon{
+  margin-left: 10px;
+  
+}
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+input{
+  height: 30px;
+  width: 300px;
+  align-self: right;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #f8f8f8;
+  font-size: 16px;
+}
+.form{
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+
+}
+.map{
+  padding: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.lineThrough{
+  text-decoration: line-through;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lineThrough:hover{
+  background-color: rgba(255,0,255,0.5);
 }
